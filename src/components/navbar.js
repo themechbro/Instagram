@@ -33,7 +33,7 @@ class Navbar extends Component{
 
     render(){
         return(
-            <nav className='navbar navbar-expand-lg navbar-light bg-transparent shadow-lg sticky-top'>
+            <nav className='navbar navbar-expand-lg navbar-light bg-light shadow-lg sticky-top'>
                 <div className='container-fluid'>
                     <a href="#" className='navbar-brand p-3'>{this.props.title}</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

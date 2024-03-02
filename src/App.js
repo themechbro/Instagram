@@ -8,13 +8,22 @@ import Home from './components/home';
 
 
 
+
+
 class App extends Component{
   constructor(props){
     super(props);
     this.state={isLoggedin:true}
   }
+  
+
+ 
+
+
 render(){
+
   return (
+   
     <BrowserRouter>
     <div className="App">
     {this.state.isLoggedin?<div><Navbar/><Home/></div>: <Login/> }
@@ -23,6 +32,7 @@ render(){
     </div>
 
     </BrowserRouter>
+    
   );
 }
 

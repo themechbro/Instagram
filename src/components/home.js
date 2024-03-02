@@ -3,7 +3,6 @@ import Stories from './stories';
 import Posts from './posts';
 
 class Home extends Component{
-
     constructor(props){
         super(props); 
         this.state={onLoad:true}
@@ -12,7 +11,8 @@ class Home extends Component{
     componentDidMount(){
         {setTimeout(() => this.setState({ onLoad: false }), 5000);}
     }
-
+   
+      
     render(){
         return(
             <div className='container pt-5'>
