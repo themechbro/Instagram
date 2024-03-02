@@ -27,7 +27,7 @@ class Stories extends Component{
         this.state={onLoad:false}
     }
     componentDidMount(){
-        {setTimeout(() => this.setState({ onLoad: true }), 2500);}
+        {setTimeout(() => this.setState({ onLoad: true }), 4000);}
     }
     render(){
         return(
