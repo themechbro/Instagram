@@ -33,7 +33,7 @@ class Navbar extends Component{
 
     render(){
         return(
-            <nav className='navbar navbar-expand-lg navbar-dark bg-dark shadow-lg'>
+            <nav className='navbar navbar-expand-lg navbar-light bg-transparent shadow-lg sticky-top'>
                 <div className='container-fluid'>
                     <a href="#" className='navbar-brand p-3'>{this.props.title}</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +41,7 @@ class Navbar extends Component{
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
-        {this.props.navitem.map(i=>  <li className='nav-item'><a className='nav-link' href='#'><ToggleButton value={i} sx={{color:'primary.main'}}>{i}</ToggleButton></a></li>)}
+        {this.props.navitem.map(i=>  <li className='nav-item'><a className='nav-link' href='#'><ToggleButton value={i} sx={{color:'light.main'}}>{i}</ToggleButton></a></li>)}
       </ul></div>
                 </div>
             </nav>
